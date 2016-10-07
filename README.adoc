@@ -1,0 +1,3 @@
+= jsdt-demo-neon
+Patrik Suzzi <psuzzi[at]gmail.com>
+Code and instructions for the JSDT demo Neon
