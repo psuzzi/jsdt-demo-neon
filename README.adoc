@@ -4,3 +4,15 @@ Patrik Suzzi <psuzzi[at]gmail.com>
 Code and instructions for the JSDT demo Neon
 
 Support material for the https://www.eclipsecon.org/europe2016/session/eclipse-loves-javascript-using-and-contributing-jsdt-20[Eclipse Loves JavaScript] Presentation. https://docs.google.com/presentation/d/1j9bRzm6mFBeLrnPRqpjOxjCj8PMnZXik5hT9vgEbu0Q/edit#slide=id.g178c9acee2_0_2866[Slides here]
+
+Make sure you installed Java 8, node, npm, bower and gulp.
+
+> java -version && node -v && npm -v && bower -v && gulp -v
+
+Get the source from demo.1 in this repo. 
+
+. open client,
+.. select `package.json` and run _npm Install_ and
+.. select `bower.json` and run it as _Bower Install_
+.. select `gulpfile.js`, expand the tree, select `connect`, and run it as _Gulp Task_
+.. open the browser on http://localhost:2772/
