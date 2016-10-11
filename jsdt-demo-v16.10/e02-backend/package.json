@@ -1,0 +1,16 @@
+{
+  "name": "demo-jsdt-v16.10-e02",
+  "version": "1.0.0",
+  "description": "simple Nodejs backend",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "author": "Patrik Suzzi",
+  "license": "EPL",
+  "dependencies": {
+  	"express": "*",
+  	"emptygif": "*",
+  	"socket.io": "*"
+  }
+}
