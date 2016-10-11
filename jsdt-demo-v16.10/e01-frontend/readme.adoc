@@ -1,0 +1,23 @@
+= JSDT Demo 
+
+Source code for the JSDT Demo.
+
+Prerequisites: JSDT assumes you already installed nodejs and bower on your system.  
+
+== E01 Frontend
+
+The index.html is a frontend built with Angular and Bootstrap. 
+
+Initially, you will see an empty page, 
+
+image::assets\frontend-before-bower.png[]
+ 
+Then, you can install the needed components using bower.
+ 
+image::assets\run-as-bower-install.png[]
+
+After installing you can see the bower dependencies are installed and the frontend works.
+
+image::assets\frontend-angular-bootstrap.gif[]
+
+Then you can debug the frontend.
