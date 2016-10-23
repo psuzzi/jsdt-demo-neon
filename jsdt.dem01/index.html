@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="jsdtApp">
+<head>
+<meta charset="ISO-8859-1">
+	<title>Dem01</title>
+	
+	<link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components\font-awesome\css\font-awesome.css">
+	
+	<script type="text/javascript" src="bower_components\angular\angular.js"></script>
+	<script type="text/javascript" src="bower_components\angular-route\angular-route.js"></script>
+	
+	<script type="text/javascript" src="indexApp.js"></script>
+</head>
+<body ng-controller="mainController">
+
+	<!-- HEADER AND NAVBAR -->
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#/">Angular Routing Example</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+					<li><a href="#contact"><i class="fa fa-comment"></i>Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- MAIN CONTENT AND INJECTED VIEWS -->
+	<div id="main">
+
+		<!-- angular templating -->
+		<!-- this is where content will be injected -->
+		<div class="ng-view"></div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+= JSDT demo 01
+Patrik Suzzi (c) <psuzzi@gmail.com>
+Version 1.0, 23.10.2016
+:keywords: JSDT, demo, nodejs, bower, npm, javascript, eclipse 
+:experimental:
+
+*Angular.JS* single page application with _routes_ and _controller_.
+Styling is done via *Bootstrap* and *FontAwesome*. The demo also has a *Node.js* _script_ to launch a local *Express* _server_ to serve the application. 
+
+Prerequisites:: JSDT integrates with Node.js and node tools you have installed on your system. To run this demo, you should check you have installer node, npm and bower.
+
+To verify the prerequisites, presse kbd:[Ctrl+Alt+T] to open the command prompt in Eclipse, and type `node -v`, `npm -v` and `bower -v`,  to verify the tools are installed. 
+ 
+
+image::assets/verify-node-npm-bower.png[]
+
+== Run the application
+
+* install bower dependencies: r-click on  `bower.json` then select *Run As.. > Bower Install*. This will install the needed dependencies under the `bower_components` folder 
+
+image::assets/run-as-bower-install.png[]
+
+Now you can open _index.html_ in your browser.  
+
+Actually, you'll see the application will work on Firefox but not on Chrome
+
+image::assets/angular-single-page-app-routing-issues-with-chrome.png[]
+
+== Cross-origins requests
+
+Angular routing is not working on local files. Hence, you'll see an empty page when launching the page in Chrome. You can detect the error only by inspecting the page. 
+
+image::assets/cross-origin-routing-not-working.png[]
+
+To fix this, we'll use nodejs to launch a lightweight local server to serve static content.
+
+[source, javascript]
+----
+include::launch-static-server.js[lines=8..20]
+----
+
+To run the script, we need to install the needed libraries, and to run the script with nodejs
+
+install dependencies:: R-click `package.json` and select *Run As.. > NPM Install*. This will install the needed dependencies under the `node_modules` folder
+
+image::assets/run-as-npm-install.png[]
+
+run node script:: R-click 'launch-static-server.js' and select *Run As .. > Node.js Application*. This will launch node passing your script as parameter
+
+image::assets/run-as-nodejs-application.png[]
+
+
+The script launches the server, and loads the content of the current directory, which displays our _index.html_, where you can see the content is loaded usign angular routing. 
+
+image::assets/angular-single-page-app.png[]
+
+To stop the server, you can just terminate the process in Eclipse.
+

@@ -1,8 +1,5 @@
-# Logs
 logs
 *.log
 npm-debug.log*
-
-# Generated
-node_modules
-bower_components
+/bower_components/
+/node_modules/
