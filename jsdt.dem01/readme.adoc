@@ -1,8 +1,9 @@
 = JSDT demo 01
-Patrik Suzzi (c) <psuzzi@gmail.com>
+Patrik Suzzi <psuzzi@gmail.com>
 Version 1.0, 23.10.2016
 :keywords: JSDT, demo, nodejs, bower, npm, javascript, eclipse 
 :experimental:
+
 
 *Angular.JS* single page application with _routes_ and _controller_.
 Styling is done via *Bootstrap* and *FontAwesome*. The demo also has a *Node.js* _script_ to launch a local *Express* _server_ to serve the application. 
@@ -55,4 +56,11 @@ The script launches the server, and loads the content of the current directory, 
 image::assets/angular-single-page-app.png[]
 
 To stop the server, you can just terminate the process in Eclipse.
+
+'''
+
+=== Copyright & License
+
+CopyRight (C) Patrik Suzzi, 2016. You can use the software examples free of charge, under the terms of https://www.eclipse.org/legal/epl-v10.html[EPL] license.
+
 
