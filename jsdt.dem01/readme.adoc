@@ -7,7 +7,7 @@ Version 1.0, 23.10.2016
 *Angular.JS* single page application with _routes_ and _controller_.
 Styling is done via *Bootstrap* and *FontAwesome*. The demo also has a *Node.js* _script_ to launch a local *Express* _server_ to serve the application. 
 
-Prerequisites:: JSDT integrates with Node.js and node tools you have installed on your system. To run this demo, you should check you have installer node, npm and bower.
+Prerequisites:: You installed latest Eclipse JSDT or JEE. As JSDT integrates Node.js (and its tools) on your system, you should also have installed Node.js, npm and Bower.
 
 To verify the prerequisites, presse kbd:[Ctrl+Alt+T] to open the command prompt in Eclipse, and type `node -v`, `npm -v` and `bower -v`,  to verify the tools are installed. 
  
@@ -36,7 +36,7 @@ To fix this, we'll use nodejs to launch a lightweight local server to serve stat
 
 [source, javascript]
 ----
-include::launch-static-server.js[lines=8..20]
+include::launch-server.js[lines=8..20]
 ----
 
 To run the script, we need to install the needed libraries, and to run the script with nodejs
