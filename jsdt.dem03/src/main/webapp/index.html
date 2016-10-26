@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Frontend</title>
+
+<!-- Angular -->
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+<script type="text/javascript" src="app.js"></script>
+
+
+</head>
+<body ng-app="MyApp" ng-init="name='World'">
+	<div ng-controller="UserCtrl">
+
+		<div class="container">
+			<h2>
+				<small>Bootstrap + Angular</small> Frontend
+			</h2>
+			<div class="btn-group btn-group-justified">
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary">Frontend</button>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary">Backend</button>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary">FullStack</button>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<h1>
+					Hello, <b>{{name}}</b>!
+				</h1>
+				<p>
+					Input box: <input type="text" ng-model="name">
+				</p>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Users</h3>
+					<div>
+						<ul>
+							<li ng-repeat="user in users">{{user.name}} - <em>{{user.enabled}}</em>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<h3>Actions</h3>
+					<a ng-href='#' ng-click='debug()' >Debug</a>
+					<a ng-href='#' ng-click='add()' >Add User</a>
+					<a ng-href='#' ng-click='addData()' >Add Data</a>
+					<a ng-href='#' ng-click='clear()' >Clear</a>
+				</div>
+				<div class="col-sm-4">
+					<h3>Pages</h3>
+					<ul>
+						<li><a href="http://localhost:8080/jsdt.dem03/adddata" target="_blank">add data</a></li>
+						<li><a href="http://localhost:8080/jsdt.dem03/list" target="_blank">list</a></li>
+						<li><a href="http://localhost:8080/jsdt.dem03/clear" target="_blank">clear</a></li>
+					</ul>
+					<h3>Log</h3>
+					<p>{{message}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
