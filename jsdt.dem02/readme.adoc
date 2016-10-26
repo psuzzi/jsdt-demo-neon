@@ -1,0 +1,10 @@
+= JSDT demo 02 (a)
+Patrik Suzzi <psuzzi@gmail.com>
+Version 1.0, 23.10.2016
+:keywords: JSDT, demo, javascript, eclipse, spring, nodejs, bower, npm, 
+:experimental:
+
+
+NodeJS application with a backend connected to mongodb and an AngularJS frontend.
+
+In the demo you'll see how to debug a node JS app. 

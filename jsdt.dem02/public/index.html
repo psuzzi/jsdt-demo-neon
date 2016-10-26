@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<head>
+<title>Monitoring Frontend</title>
+
+<!-- Angular -->
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+
+<script type="text/javascript" src="app.js"></script>
+
+</head>
+</head>
+<body ng-app="MyApp" ng-init="name='World'">
+	<div ng-controller="UserCtrl">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Home Monitor</h1>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6" style="background-color:lavender;">
+					<h3>Read</h3>
+					<p>Lights on: {{read_lights}}</p>
+					<p>Temperature: {{read_temp}}</p>
+					<a ng-href='#' ng-click='read()' >Read</a>
+				</div>
+				<div class="col-sm-6" style="background-color:lavenderblush;">
+					<h3>Set</h3>
+					<p>Lights on: <input type="checkbox" ng-model="set_lights"></p>
+					<p>Temperature <input type="text" ng-model="set_temp"></p>
+					<a ng-href='#' ng-click='set()' >Set</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h3>Log</h3>
+			<p>{{message}}</p>
+		</div>
+	</div>
+</body>
+</html>
