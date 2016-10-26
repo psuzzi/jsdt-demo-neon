@@ -4,3 +4,4 @@ Patrik Suzzi <psuzzi@gmail.com>
 This repository contains demo projects to intruduce *JSDT*, the JavaScript Development Tooling for Eclipse. 
 
 * link:./e01-frontend/readme.adoc[e01-frontend] is a simple Angular + Bootstrap Frontend application to use for testing Bower integration and JSDT Frontend Debugging. 
+* link:./e02-backend/[e02-backend] is a simple nodeJS server that tracks pages requesting a transparent pixel 1x1, a common method to track requests on web pages
